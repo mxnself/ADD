@@ -18,7 +18,7 @@ The main method can be found at: **fairseq_ADD/fairseq/modules/twostep_softmax.p
 1. Clone the repository:
 
     ```bash
-    git clone 
+    git clone https://github.com/mxnself/fairseq_ADD.git
     ```
 
 2. Navigate to the project directory and install the required dependencies:
@@ -34,21 +34,21 @@ Here is an example on the small model.
 1. Download your dataset and process it into the format of Librispeech dataset.
 2. Run the shell script **run.sh** in the corresponding directory as follows:
 
-```bash
-cd egs/librispeech/asr/
-# Set root_dir environment variable as the parent directory of ADD directory
-export root_dir=/path/to/ADD/..
-# Non-autoregressive modeling
-./run.sh --stage 0 --stop_stage 2
-```
+    ```bash
+    cd egs/librispeech/asr/
+    # Set root_dir environment variable as the parent directory of ADD directory
+    export root_dir=/path/to/ADD/..
+    # Non-autoregressive modeling
+    ./run.sh --stage 0 --stop_stage 2
+    ```
 
 To make the cluster of words, you should run the code in the "ADD/egs/librispeech/asr/sortdict"
 
 Here is an example on the W2P cluster strategy. you should first download the CMU dictionary to 'fairseq_ADD/egs/librispeech/asr/data/phone' and change paths in the file.
 
-```bash
-python sort_dict_by_phone.py
-```
+    ```bash
+    python sort_dict_by_phone.py
+    ```
 
 ## Acknowledgments
 

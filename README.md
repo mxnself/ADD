@@ -11,7 +11,7 @@ Here is an example on the MUST-C ST dataset.
 
 - All details are available in **run.sh**.
 
-The main method can be found at: **ADD/fairseq/modules/twostep_softmax.py**
+The main method can be found at: **fairseq_ADD/fairseq/modules/twostep_softmax.py**
 
 ## Installation
 
@@ -24,7 +24,7 @@ The main method can be found at: **ADD/fairseq/modules/twostep_softmax.py**
 2. Navigate to the project directory and install the required dependencies:
 
     ```bash
-    cd ADD
+    cd fairseq_ADD
     pip install -e .
     ```
     Our version: python 3.10, pytorch 2.0.0.
@@ -44,7 +44,7 @@ export root_dir=/path/to/ADD/..
 
 To make the cluster of words, you should run the code in the "ADD/egs/librispeech/asr/sortdict"
 
-Here is an example on the W2P cluster strategy. you should first download the CMU dictionary to 'ADD/egs/librispeech/asr/data/phone' and change paths in the file.
+Here is an example on the W2P cluster strategy. you should first download the CMU dictionary to 'fairseq_ADD/egs/librispeech/asr/data/phone' and change paths in the file.
 
 ```bash
 python sort_dict_by_phone.py

@@ -43,6 +43,7 @@ export root_dir=/path/to/ADD/..
 ```
 
 To make the cluster of words, you should run the code in the "ADD/egs/librispeech/asr/sortdict"
+
 Here is an example on the W2P cluster strategy. you should first download the CMU dictionary to 'ADD/egs/librispeech/asr/data/phone' and change paths in the file.
 
 ```bash

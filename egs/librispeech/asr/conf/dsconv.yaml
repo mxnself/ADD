@@ -1,0 +1,18 @@
+# conv1d : 基线
+
+# mask选取方式: no_shrink_4x,no_shrink_8x,thresh, mean, gmm
+# 下采样前去除: drop
+# 下采样后去除: drop1
+# 双步长融合: 缺省
+
+#gmm_dim40_train_2k_10I10
+subsampling-type: gmm_dim40_train_2k_10I10
+shrink-value: -0.2
+random-mask: False
+thresh-dynamic: False
+pool-thresh: 0.0
+gmm-iter: 10
+gmm-iter-per: 10
+gmm-prob: 30
+gmm-num: 2
+gmm-dim: 40

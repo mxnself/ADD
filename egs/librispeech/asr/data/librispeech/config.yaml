@@ -1,0 +1,25 @@
+asr_vocab_filename: spm_unigram10000.txt
+bpe_tokenizer:
+  bpe: sentencepiece
+  sentencepiece_model: /mnt/zhangyh/gch/data/librispeech_asr/spm_unigram10000.model
+input_channels: 1
+input_feat_per_channel: 80
+sampling_alpha: 1.0
+share_src_and_tgt: true
+specaugment:
+  freq_mask_F: 27
+  freq_mask_N: 2
+  time_mask_N: 2
+  time_mask_T: 100
+  time_mask_p: 1.0
+  time_wrap_W: 0
+src_bpe_tokenizer:
+  bpe: sentencepiece
+  sentencepiece_model: /mnt/zhangyh/gch/data/librispeech_asr/spm_unigram10000.model
+transforms:
+  '*':
+  - utterance_cmvn
+  _train:
+  - utterance_cmvn
+  - specaugment
+vocab_filename: spm_unigram10000.txt

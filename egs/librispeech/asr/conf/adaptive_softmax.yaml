@@ -1,0 +1,11 @@
+adaptive_softmax_type: twostep
+
+adaptive_softmax_cutoff: (1017,2474,3378,5507,7302,7780,8564,9293,9695)
+adaptive_softmax_factor: 2
+adaptive_softmax_dropout: 0.0
+tie_adaptive_weights: False
+tie_adaptive_proj: False
+
+
+adaptive_softmax_gumbel: True
+
